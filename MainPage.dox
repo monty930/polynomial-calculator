@@ -1,0 +1,65 @@
+/**
+@mainpage Dokumentacja zadania wielomiany
+
+### Treść zadania
+
+Uwaga: aktualna treść zadania znajduje się w [Moodle](https://moodle.mimuw.edu.pl).
+
+### Opis programu
+
+Implementacja kalkulatora działającego na wielomianach wielu zmiennych.
+Kalkulator operuje na stosie i umożliwia wykonanie operacji takich jak:
+
+wczytanie wielomianu, który następnie umieszczany jest na wierzchołku stosu;
+
+PRINT: wypisanie wielomianu z wierzchołka;
+
+POP: usunięcie wielomianu z wierzchołka;
+
+ADD, MUL, SUB: dodanie, pomnożenie bądź odjęcie dwóch wielomianów z
+wierzchołka (wielomiany te są usuwane i zastępowane wielomianem wynikowym);
+
+ZERO: umieszczenie na wierzchołku stosu wielomianu tożsamościowo równego 0;
+
+IS_ZERO: sprawdzenie czy wielomian z wierzchołka stosu jest tożsamościowo
+równy 0, na standardowe wyjście wypisywane jest 0 lub 1;
+
+IS_EQ: sprawdzenie, czy dwa wielomiany z wierzchołka są równe, na standardowe
+wyjście wypisywane jest 0 lub 1;
+
+IS_COEFF: sprawdzenie czy wielomian z wierzchołka jest wielomianem stałym, na
+standardowe wyjście wypisywane jest 0 lub 1;
+
+DEG: wypisanie na standardowe wyjście stopnia wielomianu z wierzchołka (−1 dla
+wielomianu tożsamościowo równego zeru);
+
+DEG_BY idx: wypisanie na standardowe wyjście stopnia wielomianu z wierzchołka,
+ze względu na zmienną o numerze idx (−1 dla wielomianu tożsamościowo równego
+zeru);
+
+AT x: zastąpienie wielomianu z wierzchołka tym samym wielomianem, wyliczonym w
+punkcie x;
+
+CLONE: dodanie na wierzchołek stosu kopii wielomianu z wierzchołka.
+
+COMPOSE k:  Składa wielomiany. Podstawia dane k wielomianów pod zmienne wielomianu.
+
+Poprawne dane przekazywane programowi powinny składać się z dowolnej liczby
+wierszy, z których każdy jest wielomianem lub komendą. Poprawny wielomian jest
+liczbą (wielomian stały) lub sumą dodatniej liczby jednomianów, np.
+(3,1)+(((4,4),100),2). Komenda powinna być jedną z komend podanych powyżej.
+Argument komendy AT powinien być z zakresu od -9223372036854775808
+do 9223372036854775807. Argument komendy DEG_BY powinien być z zakresu: od 0 do
+18446744073709551615.
+
+W przypadku napotkania błędu, takiego jak: zbyt mało wielomianów na stosie do
+poprawnego wykonania instrukcji, niepoprawny wielomian lub komenda na wejściu,
+niepoprawny argument komendy DEG_BY lub AT: program wypisuje na standardowe
+wejście odpowiedni komunikat i ignoruje błędny wiersz. Program ignoruje
+również wiersze zaczynające się od '#' i puste.
+
+Kalkulator, będący drugą i trzecią częścią zadania zaliczeniowego, korzysta z 
+biblioteki wielomianów rzadkich wielu zmiennych, zaimplementowanej w ramach 
+pierwszej części zadania.
+
+*/
